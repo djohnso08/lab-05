@@ -100,6 +100,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(testArray) {
   //eslint-disable-line
+  var total = 1;
+  for (var i = 0; i < testArray.length; i++){
+    total = multiply(total,testArray[i])[0];
+  }
+  var message = 'The numbers ' + testArray + ' have a product of ' + total
+  + '.';
+  return [total,message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
